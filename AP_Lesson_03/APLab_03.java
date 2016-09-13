@@ -41,22 +41,24 @@ public class APLab_03
 		System.out.println("I'm only kiddin' " + name +".");
 		
 		System.out.println("What is your height in inches?");
-		int h = keyboard.nextInt();
+		double h = keyboard.nextDouble();
 		System.out.println("What is your weight in lb?");
-		int w = keyboard.nextInt();
-		int bmi = 703 * w / h / h;
+		double w = keyboard.nextDouble();
+		int j = 703;
+		
+		double bmi = j * w / h / h;
 		
 		System.out.println("So, your metric BMI is " + bmi +".");
 		
 		System.out.println(" This program calculates the area of a rectangle. ");
 		
 		System.out.println("Input the width please?");
-		int a = keyboard.nextInt();
+		double a = keyboard.nextDouble();
 		
 		System.out.println("Input the length please?");
-		int b = keyboard.nextInt();
+		double b = keyboard.nextDouble();
 		
-		int c = a * b;
+		double c = a * b;
 		
 		System.out.println("Area of the rectangle is " + c);
 	}
