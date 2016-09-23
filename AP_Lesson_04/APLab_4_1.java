@@ -26,6 +26,6 @@ public class APLab_4_1
 	
 	public double calcCI(double one, double two, double three, double four)
 	{
-		return two * Math.pow( 1 + one / three, three * four);
+		return (two * Math.pow( 1 + one / three, three * four))/(four*12);
 	}
 }
