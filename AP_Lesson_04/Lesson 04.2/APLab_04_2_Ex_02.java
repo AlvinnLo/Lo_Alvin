@@ -17,7 +17,7 @@ public class APLab_04_2_Ex_02
 		
 		double RecArea = Volume.average(num1 , num2 , num3);
 		
-		System.out.printf("The average of %10.5f, %10.5f, and %10.5f is %10.5f.", num1, num2, num3, RecArea );
+		System.out.printf("The average of %1.5f, %1.5f, and %1.5f is %1.5f.", num1, num2, num3, RecArea );
 	}
 	
 	public double average(double one, double two, double three)
