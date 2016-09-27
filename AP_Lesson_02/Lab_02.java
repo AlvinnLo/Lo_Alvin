@@ -14,8 +14,7 @@ public class Lab_02
 		String zip = "Zip Code";
 		System.out.println(name);
 		System.out.println(address);
-		System.out.println(city);
-		System.out.println(zip);
+		System.out.println(city + "  "  +zip);
 		
 		int h = 5;
 		int w = 3;
