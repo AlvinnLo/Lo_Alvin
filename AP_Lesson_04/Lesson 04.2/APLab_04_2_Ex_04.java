@@ -2,22 +2,30 @@ import java.util.Scanner;
 
 public class APLab_04_2_Ex_04
 {
+	static double r;
+	static double area;
+	
 	public static void main(String[]args)
-	{
-		APLab_04_2_Ex_04 Volume = new APLab_04_2_Ex_04();
-		
+	{		
+	    APLab_04_2_Ex_04 Volume = new APLab_04_2_Ex_04();
+	
 		Scanner keyboard = new Scanner(System.in);
 		
 		System.out.println("Enter radius of circle.");
-		double r = keyboard.nextDouble();
+		r = keyboard.nextDouble();
 		
-		double area = Volume.calcArea(r);
+		calcArea();
+		print();
 		
-		System.out.printf("The area of a circle with a radius of r is %1.5f.", area );
 	}
 	
-	public double calcArea(double one)
+	public static void calcArea()
 	{
-		return 3.14159* (Math.pow (one, 2));
+		area = 3.14159* (Math.pow (r, 2));
+	}
+	
+	public static void print()
+	{
+		System.out.printf("The area of a circle with a radius of %1.5f is %1.5f.", r, area );
 	}
 }
