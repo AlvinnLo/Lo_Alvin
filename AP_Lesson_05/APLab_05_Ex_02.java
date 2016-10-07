@@ -31,12 +31,12 @@ public class APLab_05_Ex_02
 		System.out.println("Please enter the price: ");
 		Double price4 = keyboard.nextDouble();
 		
-		String item7 = "Subtotal";
-		Double price7 = price1 + price2 +price3+price4;
-		String item5 = "Tax";
-		Double price5 = price7 * 0.0825;
-		String item6 = "Total";
-		Double price6 = price7 + price5;
+		String item5 = "Subtotal";
+		Double price5 = price1 + price2 +price3+price4;
+		String item6 = "Tax";
+		Double price6 = price5 * 0.0825;
+		String item7 = "Total";
+		Double price7 = price5 + price6;
 		String item8 = "Discount";
 		Double price8 = discount(price6);
 		
@@ -48,9 +48,9 @@ public class APLab_05_Ex_02
 		form.format(item3, price3);
 		form.format(item4, price4);
 		
-		form.format(item7, price7);
 		form.format(item5, price5);
 		form.format(item6, price6);
+		form.format(item7, price7);
 		form.format(item8, price8);
 		
 		System.out.println("\n__________________________________________");
@@ -63,11 +63,11 @@ public class APLab_05_Ex_02
 	{
 		if(price6 >= 2000)
 		{
-			price8 = price6 * 0.85;
+			price8 = price7 * 0.85;
 		}
 		if(price6 < 2000)
 		{
-			price8 = price6;
+			price8 = price7;
 		}
 		return price8;
 	}
