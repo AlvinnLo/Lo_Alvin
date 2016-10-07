@@ -38,7 +38,7 @@ public class APLab_05_Ex_02
 		String item7 = "Total";
 		Double price7 = price5 + price6;
 		String item8 = "Discount";
-		Double price8 = discount(price6);
+		Double price8 = discount(price7);
 		
 		
 		System.out.println("\n<<<<<<<<<<<<<<<__Receipt__>>>>>>>>>>>>>>>>");
@@ -59,13 +59,13 @@ public class APLab_05_Ex_02
 	}
 	
 	static double price8;
-	public static double discount(double price6)
+	public static double discount(double price7)
 	{
-		if(price6 >= 2000)
+		if(price7 >= 2000)
 		{
 			price8 = price7 * 0.85;
 		}
-		if(price6 < 2000)
+		if(price7 < 2000)
 		{
 			price8 = price7;
 		}
