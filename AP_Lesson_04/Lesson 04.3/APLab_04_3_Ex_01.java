@@ -20,6 +20,6 @@ public class APLab_04_3_Ex_01
 	
 	public double calcPerim(double one, double two)
 	{
-		return one * two;
+		return 2*(one + two);
 	}
 }

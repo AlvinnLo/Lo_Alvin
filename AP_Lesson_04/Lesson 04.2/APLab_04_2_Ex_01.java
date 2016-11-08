@@ -24,7 +24,7 @@ public class APLab_04_2_Ex_01
 	
 	public static void calcPerim()
 	{
-		p = l*w;
+		p = 2*(l+w);
 	}
 	
 	public static void print()
