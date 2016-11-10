@@ -4,8 +4,12 @@ public class APLab_05_2_Ex_06
 {
 	public static void main(String[]args)
 	{	
-		String username = "apple";
-		String password = "orange";
+		Scanner keyboard = new Scanner(System.in);
+		
+		System.out.println("Enter username. (apple)");
+		String username = keyboard.next();
+		System.out.println("Enter password. (orange)");
+		String password = keyboard.next();
 		
 		passCheck(username, password);
 		
