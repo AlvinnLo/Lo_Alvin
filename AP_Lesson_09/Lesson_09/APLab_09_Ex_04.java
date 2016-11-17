@@ -14,7 +14,7 @@ public class APLab_09_Ex_04
 		
 		int[] seq = new int[size];
 			
-			for (int i = 0; i < seq[i]; i++)
+			for (int i = 0; i < size; i++)
 		{
 			if ( i == 0 || i == 1)
 			{
@@ -24,10 +24,9 @@ public class APLab_09_Ex_04
 			else
 			{
 				seq[i] = seq[i-1] + seq [i-2];
-				
 			}
+			
 			System.out.print( seq[i] + " " );	
-		}
-		
+		}	
 	}
 }
