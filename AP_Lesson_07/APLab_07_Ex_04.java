@@ -17,7 +17,7 @@ public class APLab_07_Ex_04
 	
 	public static void replace()
 	{
-		while(sentence.indexOf("a") > 0)
+		while(sentence.indexOf("a") >= 0)
 		{
 			sentence = sentence.substring(0, sentence.indexOf("a"))+ "@" + sentence.substring(sentence.indexOf("a")+1 );
 		}
