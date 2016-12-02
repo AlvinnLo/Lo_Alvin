@@ -9,11 +9,13 @@ public class APLab_06_Ex_02
 		System.out.println("Enter an integer.");
 		int number = keyboard.nextInt();
 		
+		int factorial = 1;
+		
 		for(int i=1; i <= number; i++)
 		{
-			System.out.println(i * number);
+			factorial *= i;
 		}
-		
+		System.out.println(factorial);
 	}
 	
 }
