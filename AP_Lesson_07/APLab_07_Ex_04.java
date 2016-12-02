@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class APLab_07_Ex_04
+public class APLab_07_Ex_04 
 {
 	
 	static String sentence;
