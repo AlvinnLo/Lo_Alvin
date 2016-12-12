@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import java.util.Arrays;
 import java.util.ArrayList;
-public class ExpressionSolver 
+public class APLab_10_Ex_02 
 {
 	public static void main(String[]args) 
 	{
