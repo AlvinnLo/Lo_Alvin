@@ -39,10 +39,10 @@ public class APLab_10_Ex_02
 			}
 			else i++;
 		}
-		int i = 0;
+		
 		while (i < equation.size()) 
 		{
-			if ((equation.get(i).equals("+") || equation.get(j).equals("-")) && i < equation.size())
+			if ((equation.get(i).equals("+") || equation.get(i).equals("-")) && i < equation.size())
 				{
 				if (equation.get(i).equals("+")) 
 				{
@@ -53,7 +53,7 @@ public class APLab_10_Ex_02
 				}
 				else 
 				{
-					equation.set(j, "" + (Integer.parseInt(equation.get(i-1)) - Integer.parseInt(equation.get(i+1))));
+					equation.set(i, "" + (Integer.parseInt(equation.get(i-1)) - Integer.parseInt(equation.get(i+1))));
 					
 					equation.remove(i-1);
 					equation.remove(i);
