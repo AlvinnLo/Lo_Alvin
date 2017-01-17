@@ -1,79 +1,79 @@
 import java.util.Scanner;
-public class APLab_11_1_Ex_05
+public class APLab_11_1_Ex_05 
 {
-	int CLIPSIZE = 16;
-	public static void main (String[]args)
+	static int bulletCount;
+	static int CLIPSIZE = 16;
+	static int shotCount;
+	static String[] clip;
+	
+	public static void main(String[]args) 
 	{
 		Scanner keyboard = new Scanner(System.in);
-			
-		int bulletCount = 96;
-		int shotCount = 0;
-		String [][] clip = new String [CLIPSIZE][1];
-		
+		bulletCount = 96;
+		shotCount = 0;
+		clip = new String[CLIPSIZE];
 		resetClip();
+		String action;
 		
-		while ( int i = 0; bulletCount  > 0 ||shotCount > 0, i++)
+		while (bulletCount > 0 || shotCount > 0) 
 		{
 			System.out.println("Action: ");
-			String action = keyboard.next();
-			
-			if (action == "R")
+			action = keyboard.next();
+			if (action.equals("R")) 
 			{
 				reload();
 			}
-			
-			if (action == "S")
+			if (action.equals("S")) 
 			{
-				shoot();
+				System.out.println(shoot());
 			}
-			System.out.print( printClip() );
+			printClip();
 		}
-		System.out.println("Out of Bullets!!!");
+		System.out.println("Out of bullets");
 	}
-	
-	public static String resetClip()
+	public static void resetClip() 
 	{
-		for (int i=0; 0 <= clip.length; i++)
+		for (int i = 0; i < clip.length; i++) 
 		{
 			clip[i] = "[]";
 		}
 	}
-	
-	public static String shoot()
+	public static String shoot() 
 	{
-		if (shotCount > 0)
+		if (shotCount > 0) 
 		{
-			clip[shotCount - 1] = "[]";
-			shotCount -= 1;
-			return "Boom!!!"
+			clip[shotCount-1] = "[]";
+			shotCount--;
+			return "Boom!!!";
 		}
-		else
-		{
-			return "Reload!!!"
-		}
+		else return "Reload!!!";
 	}
-	
-	public static String reload()
+	public static void reload()
 	{
-		if (bulletCount >= 16)
+		if (bulletCount >= CLIPSIZE) 
 		{
-			int bulletCount -= CLIPSIZE;
-			int shotCount = CLIPSIZE;
+			bulletCount -= CLIPSIZE;
+			shotCount = CLIPSIZE;
 		}
-		else
+		else 
 		{
-			int ShotCount = bulletCount;
+			shotCount = bulletCount;
 			bulletCount = 0;
 		}
 		resetClip();
-		for (int i = 0; 0 <= shotCount, i++)
+		for (int i = 0; i < shotCount; i++) 
 		{
 			clip[i] = " * ";
 		}
 	}
-	
-	public static String printClip()
+	public static void printClip() 
 	{
-		
+		String output = "";
+		output += "Bullets:\t" + bulletCount + "\nClip:\t";
+		for (int i = 0; i < CLIPSIZE; i++) 
+		{
+			output += clip[i];
+		}
+		System.out.println(output);
 	}
 }
