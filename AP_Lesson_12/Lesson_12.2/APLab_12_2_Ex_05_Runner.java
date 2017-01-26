@@ -25,7 +25,6 @@ public class APLab_12_2_Ex_05_Runner
 			   userID = (int)(Math.random() * 1000000) + 1;
 			}
 		}
-		
 		if(yon.equal("y"))
 		{
 			User pH2 = new User(firstname, lastname, avatar);
@@ -37,17 +36,12 @@ public class APLab_12_2_Ex_05_Runner
 			   avatar = av;
 			   userID = (int)(Math.random() * 1000000) + 1;
 			}
-		}
+		}	
 		
-		
+		User pH = new User(firstname, lastname);
+	   System.out.println(pH);
+	   System.out.println();
+	   User pH2 = new User(firstname, lastname, av);
+	   System.out.println(pH2);
 	}
-	
-	public static void main(String[]args)
-{
-   User pH = new User(firstname, lastname);
-   System.out.println(pH);
-   System.out.println();
-   User pH2 = new User(firstname, lastname, av);
-   System.out.println(pH2);
-}
 }
