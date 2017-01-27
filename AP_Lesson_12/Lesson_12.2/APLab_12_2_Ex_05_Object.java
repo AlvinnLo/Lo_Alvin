@@ -1,30 +1,28 @@
 public class APLab_12_2_Ex_05_Object
 {
-	private String firstname;
-	private String lastname;
-	private String avatar;
-	private String yon;
+	private String firstName, lastName, avatar;
+	private int userID;
 	
-	public APLab_12_2_Ex_05_Object()
+	public APLab_12_2_Ex_05_Object(String fN, String lN)
 	{
-		firstname = "";
-		lastname = "";
-		avatar = "";
-		yon = "";
+		firstName = fN;
+		lastName = lN;
+		avatar = "Undefined";
+		userID = (int)(Math.random() * 1000000) + 1;
 	}
 	
-	public APLab_12_2_Ex_05_Object(String fN, String lN, String av, String yn)
+	public APLab_12_2_Ex_05_Object(String fN, String lN, String av)
 	{
-		firstname = fN;
-		lastname = lN;
+		firstName = fN;
+		lastName = lN;
 		avatar = av;
-		yon = yn;
+		userID = (int)(Math.random() * 1000000) + 1;
 	}
 	
 	public String toString()
 	{
-	   return "Customer Info...\nFirst Name: " + firstname +
-							   "\nLast Name: " + lastname +
+	   return "Customer Info...\nFirst Name: " + firstName +
+							   "\nLast Name: " + lastName +
 							   "\nAvatar: " + avatar +
 							   "\nUser ID#: " + userID;
 	}
