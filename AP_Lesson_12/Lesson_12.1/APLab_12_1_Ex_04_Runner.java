@@ -15,13 +15,13 @@ public class APLab_12_1_Ex_04_Runner
 		APLab_12_1_Ex_04_Object object = new APLab_12_1_Ex_04_Object(hair, eye, skin);
 		
 		System.out.println("My info...");
-		System.out.println("Hair: +\t" + object.getHair());
-		System.out.println("Eye: +\t" + object.getEye());
-		System.out.println("Skin: +\t" + object.getSkin());
+		System.out.println("Hair: \t" + object.getHair());
+		System.out.println("Eye: \t" + object.getEye());
+		System.out.println("Skin: \t" + object.getSkin());
 		
 		System.out.println("Friend's info...");
-		System.out.println("Hair: blonde");
-		System.out.println("Eye: blue");
-		System.out.println("Skin: white");
+		System.out.println("Hair: \t blonde");
+		System.out.println("Eye: \t blue");
+		System.out.println("Skin: \t white");
 	}
 }

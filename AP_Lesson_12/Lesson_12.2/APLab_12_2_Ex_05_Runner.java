@@ -1,47 +1,31 @@
 import java.util.Scanner;
 public class APLab_12_2_Ex_05_Runner
 {
-	public static void main (String[]args)
+	public static void main(String[]args)
 	{
-		Scanner keyboard = new Scanner(System.in);
+		String f, l, yon, av;
 		
-		System.out.println("Please input First Name");
-		String firstname = keyboard.next();
-		System.out.println("Please intput Last Name");
-		String lastname = keyboard.next();
-		System.out.println("Please intput Avatar");
-		String avatar = keyboard.next();
-		System.out.println("Do you want a public avatar (y or n)");
-		String yon = keyboard.next();
+		Scanner kb = new Scanner(System.in);
+		System.out.println("Enter first name: ");
+		f = kb.next();
+		System.out.println("Enter last name: ");
+		l = kb.next();
+		System.out.println("Would you like to use a public avatar? (y or n): ");
+		yon = kb.next();
 		
-		if(yon.equal("n"))
+		
+		if(yon.equals("n"))
 		{
-			User pH = new User(firstname, lastname);
-			public User(String fN, String lN)
-			{
-			   firstName = fN;
-			   lastName = lN;
-			   avatar = "Undefined";
-			   userID = (int)(Math.random() * 1000000) + 1;
-			}
+			APLab_12_2_Ex_05_Object object = new APLab_12_2_Ex_05_Object(f, l);
+			System.out.println(object);
 		}
-		if(yon.equal("y"))
-		{
-			User pH2 = new User(firstname, lastname, avatar);
 			
-			public User(String fN, String lN, String av)
-			{
-			   firstName = fN;
-			   lastName = lN;
-			   avatar = av;
-			   userID = (int)(Math.random() * 1000000) + 1;
-			}
-		}	
-		
-		User pH = new User(firstname, lastname);
-	   System.out.println(pH);
-	   System.out.println();
-	   User pH2 = new User(firstname, lastname, av);
-	   System.out.println(pH2);
+		else
+		{
+			System.out.println("Enter your avatar name: ");
+			av = kb.next();
+			APLab_12_2_Ex_05_Object object1 = new APLab_12_2_Ex_05_Object(f, l, av);
+			System.out.println(object1);
+		}
 	}
 }

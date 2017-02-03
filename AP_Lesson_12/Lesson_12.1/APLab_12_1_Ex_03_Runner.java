@@ -16,10 +16,10 @@ public class APLab_12_1_Ex_03_Runner
 		
 		APLab_12_1_Ex_03_Object object = new APLab_12_1_Ex_03_Object(paint, interior, engine, tires);
 		
-		System.out.println("Your vehicle is ready......");
-		System.out.println("Paint: +\t" + object.getPaint());
-		System.out.println("Interior: +\t" + object.getInterior());
-		System.out.println("Engine: +\t" + object.getEngine());
-		System.out.println("Tires: +\t" + object.getTires());
+		System.out.println("\nYour vehicle is ready......");
+		System.out.println("Paint: \t" + object.getPaint());
+		System.out.println("Interior: \t" + object.getInterior());
+		System.out.println("Engine: \t" + object.getEngine());
+		System.out.println("Tires: \t" + object.getTires());
 	}
 }

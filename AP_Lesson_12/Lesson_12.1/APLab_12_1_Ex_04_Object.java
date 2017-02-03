@@ -1,26 +1,40 @@
 public class APLab_12_1_Ex_04_Object
 {
-	public APLab_12_1_Ex_04_Object(String p, String i, String e, String t)
+	private String hair, eyes, skin;
+	
+	public APLab_12_1_Ex_04_Object()
 	{
-		private String hair, eyes, skin;
-		public void setHES(String h, String e, String s)
-		{
-			String hair = "";
-			String eyes = "";
-			String skin = "";
+		String hair = "";
+		String eyes = "";
+		String skin = "";
+	}
 		
-		public String getHair()
-		{
-			return hair;
-		}
+	public APLab_12_1_Ex_04_Object(String h, String e, String s)
+	{
+		String hair = h;
+		String eyes = e;
+		String skin = s;
+	}
 		
-		public String getEyes()
-		{
-			return eyes;
-		}
+	public void setHES(String h, String e, String s)
+	{
+		String hair = h;
+		String eyes = e;
+		String skin = s;
+	}
 		
-		public String getSkin()
-		{
-			return skin;		
+	public String getHair()
+	{
+		return hair;
+	}
+		
+	public String getEyes()
+	{
+		return eyes;
+	}
+		
+	public String getSkin()
+	{
+		return skin;		
 	}
 }
