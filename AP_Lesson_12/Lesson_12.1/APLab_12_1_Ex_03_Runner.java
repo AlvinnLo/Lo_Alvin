@@ -1,20 +1,24 @@
 import java.util.Scanner;
 public class APLab_12_1_Ex_03_Runner
-{
 	public static void main(String[]args)
 	{
-		Scanner keyboard = new Scanner(System.in);
+		String p = "";
+		String i = "";
+		String e = "";
+		String t = "";
 		
-		System.out.println("Input paint");
-		String paint = keyboard.nextLine();
-		System.out.println("Input interior");
-		String interior = keyboard.nextLine();
-		System.out.println("Input engine");
-		String engine = keyboard.nextLine();
-		System.out.println("Input tires");
-		String tires = keyboard.nextLine();
+		Scanner kb = new Scanner(System.in);
 		
-		APLab_12_1_Ex_03_Object object = new APLab_12_1_Ex_03_Object(paint, interior, engine, tires);
+		System.out.println("Input paint: ");
+		p = kb.nextLine();
+		System.out.println("Input interior: ");
+		i = kb.nextLine();
+		System.out.println("Input engine: ");
+		e = kb.nextLine();
+		System.out.println("Input tires: ");
+		t = kb.nextLine();
+		
+		APLab_12_1_Ex_03_Object object = new APLab_12_1_Ex_03_Object(p, i, e, t);
 		
 		System.out.println("\nYour vehicle is ready......");
 		System.out.println("Paint: \t" + object.getPaint());
