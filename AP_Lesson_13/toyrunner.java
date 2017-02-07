@@ -2,9 +2,10 @@ public class toyrunner
 {
 	public static void main (String[]args)
 	{
-		car object = new car (name, count);
-		afigure object new afigure (name, count);
-		System.out.println(car);
-		System.out.println(afigure);
+		car object1 = new car ("BMW");
+		afigure object2 new afigure ("Naruto");
+		
+		System.out.println(BMW);
+		System.out.println(Naruto);
 	}
 }

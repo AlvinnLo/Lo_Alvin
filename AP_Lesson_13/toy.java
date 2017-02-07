@@ -12,7 +12,7 @@ public abstract class toy
 	public toy (String n, int c)
 	{
 		this.name = n;
-		this.count = c;
+		this.count = 1;
 	}
 
 	public void setName(String n)
@@ -34,6 +34,8 @@ public abstract class toy
 	{
 		return count;
 	}
+	
+	public abstract String getType();
 
 	public String toString()
 	{
