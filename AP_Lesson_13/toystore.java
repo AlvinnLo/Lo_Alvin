@@ -4,40 +4,38 @@ public class toystore
 {
 	public static void main (String[]args)
 	{
-		ArrayList<toy> inventory = new ArrayList<toy>();
-		inventory.add(new afigure(name, count))
-		inventory.add(new toy(name, count))
+		ArrayList<toy> toylist = new ArrayList<toy>();
 	}
 	
 	public toystore ()
 	{
-		name = "";
-		count = 0
+		loadToys("");
 	}
 	
-	public toystore(String nm, int c)
+	public toystore(String t)
 	{
-		name = nm;
-		count = c;
+		loadToys(t);
 	}
 	
-	public String loadToys()
+	public String loadToys(String ts)
 	{
-		ArrayList<String> toys = new ArrayList<String>();
-		for (i =1; i <= toys.size(); i++)
+		ArrayList<String> toys = new ArrayList<String>(ts.split(", "));
+		for (i =0; i <= toys.size(); i++)
 		{
-			toys.set (i, name)
-			toys.set (i + 1, type)
-			toy object = new toy(nm)
-			if (nm.equals(""))
+			String name = toys.get(i);
+			String type = toys.get(i+1);
+			
+			toy object = new toy(getThatToy());
+			
+			if (object.equals(""))
 			{
-				if (nm.equals("Car"))
+				if (object.equals("Car"))
 				{
-					return car;
+					toys.add(object.toString());
 				}
-				if (nm.equals("AF"))
+				if (object.equals("AF"))
 				{
-					return AFigure;
+					toys.add(object.toString());
 				}
 			}
 			else
@@ -47,14 +45,73 @@ public class toystore
 		}
 	}
 	
-	public String getThatToy(nm)
+	public String getThatToy(String nm)
 	{
-		for (i = 1; i <= toys.size; i++)
+		for (i = 0; i <= toys.size; i++)
 		{
-			if (name.equals("nm"))
+			if (object.equals("nm"))
 			{
-				return
+				return object;
+			}
+			else
+			{
+				return "";
 			}
 		}
+	}
+	
+	public String getMostFrequentToy()
+	{
+		String name;
+		int max = Integer.MIN_VALUE;
+		
+		for (i = 0; i <= toys.size; i++)
+		{
+			if(max < count)
+			{
+				max = count;
+				name = object;
+			}
+		}
+		return name;
+	}
+	
+	public String getMostFrequentType()
+	{
+		int car = 0;
+		int figures = 0;
+		
+		for (i = 0; i <= toys.size; i++)
+		{
+			if(toys.getType.equals("car"))
+			{
+				cars +=1;
+			}
+			
+			if(toys.getType.equals("AF"))
+			{
+				figures +=1;
+			}
+		}
+		
+		if(car > figures)
+		{
+			return ("Cars");
+		}
+		
+		if(figures > cars)
+		{
+			return ("Action Figures");
+		}
+		
+		if(car == figures)
+		{
+			return("Equal amounts of action figures and cars!");
+		}
+	}
+	
+	public String toString()
+	{
+		return toyList;
 	}
 }
