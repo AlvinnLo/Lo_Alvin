@@ -1,15 +1,14 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Scanner;
 public class toystore
 {
-	public static void main (String[]args)
-	{
-		ArrayList<toy> toylist = new ArrayList<toy>();
-	}
-	
+	ArrayList<toy> toylist = new ArrayList<toy>();
+
 	public toystore ()
 	{
-		loadToys("");
+		ArrayList<toy> toylist = new ArrayList<>();
+
 	}
 	
 	public toystore(String t)
@@ -19,13 +18,13 @@ public class toystore
 	
 	public String loadToys(String ts)
 	{
-		ArrayList<String> toys = new ArrayList<String>(ts.split(", "));
-		for (i =0; i <= toys.size(); i++)
+		ArrayList<String> toys = new ArrayList<String>(Arrays.asList(ts.split(", ")));
+		for (int i = 0; i < toys.size(); i += 2)
 		{
 			String name = toys.get(i);
 			String type = toys.get(i+1);
 			
-			toy object = new toy(getThatToy());
+			toy object = new getThatToy(object.getName()); 
 			
 			if (object.equals(""))
 			{
@@ -40,18 +39,18 @@ public class toystore
 			}
 			else
 			{
-				count += 1;
+				object.getCount() += 1;
 			}
 		}
 	}
 	
 	public String getThatToy(String nm)
 	{
-		for (i = 0; i <= toys.size; i++)
+		for (toy object : toylist)
 		{
-			if (object.equals("nm"))
+			if (object.getName().equals("nm"))
 			{
-				return object;
+				return object.getName();
 			}
 			else
 			{
@@ -62,15 +61,15 @@ public class toystore
 	
 	public String getMostFrequentToy()
 	{
-		String name;
+		String name = " ";
 		int max = Integer.MIN_VALUE;
 		
-		for (i = 0; i <= toys.size; i++)
+		for (toy object : toylist)
 		{
-			if(max < count)
+			if(max < object.getCount())
 			{
-				max = count;
-				name = object;
+				max = object.getCount();
+				name = object.getName();
 			}
 		}
 		return name;
@@ -81,14 +80,14 @@ public class toystore
 		int car = 0;
 		int figures = 0;
 		
-		for (i = 0; i <= toys.size; i++)
+		for (toy object : toylist)
 		{
-			if(toys.getType.equals("car"))
+			if(object.getType().equals("car"))
 			{
-				cars +=1;
+				car +=1;
 			}
 			
-			if(toys.getType.equals("AF"))
+			if(object.getType().equals("AF"))
 			{
 				figures +=1;
 			}
@@ -99,7 +98,7 @@ public class toystore
 			return ("Cars");
 		}
 		
-		if(figures > cars)
+		if(figures > car)
 		{
 			return ("Action Figures");
 		}
@@ -112,6 +111,6 @@ public class toystore
 	
 	public String toString()
 	{
-		return toyList;
+		return toylist.toString();
 	}
 }
