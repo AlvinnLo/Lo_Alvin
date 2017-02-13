@@ -10,6 +10,16 @@ public abstract class Console extends GameSystem
 		super(p);
 	}
 	
+	public String getPlatform()
+	{
+		super();
+	}
+	
+	public int getserialNo()
+	{
+		super();
+	}
+	
 	public String getController()
 	{
 		return "";
