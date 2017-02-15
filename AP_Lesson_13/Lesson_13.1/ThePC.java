@@ -17,7 +17,7 @@ public abstract class ThePC extends GameSystem
 	
 	public String toString()
 	{
-		return "Platform: " + getplatform() + "\n Serial #: " + getSerialNo() + "\n Controlller: " +systemInput();
+		return "Platform: " + super.getplatform() + "\n Serial #: " + super.getSerialNo() + "\n Controlller: " +systemInput();
 	}
 
 }
