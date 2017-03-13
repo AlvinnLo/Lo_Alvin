@@ -1,4 +1,4 @@
-public class GMC extends car
+public class GMC extends Car
 {
 	public GMC()
 	{

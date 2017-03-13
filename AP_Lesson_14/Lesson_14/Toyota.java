@@ -1,4 +1,4 @@
-public class Toyota extends car
+public class Toyota extends Car
 {
 	public Toyota()
 	{
