@@ -1,11 +1,21 @@
+import java.util.Scanner;
+
 public class toystorerunner
 {
 	public static void main(String[]args)
 	{
-		String toy = "Hotwheel, Car, G.I.Joe, AF, PennyRacer, Car, Matchbox, Car, Star Wars, AF, Pullback, Car, Star Wars, AF
-";
-		System.out.println("List: \n" + toy);
+		Scanner keyboard = new Scanner(System.in);
+		
+		System.out.println("Input list of toys");
+		String toys = keyboard.nextLine();
+		
+		toystore object = new toystore(toys);
+		
+		System.out.println("List...");
+		System.out.println(toys);
+		System.out.println(" ");
 		System.out.println("Most Frequent Toy: " + object.getMostFrequentToy());
 		System.out.println("Most Frequent Type of Toy: " + object.getMostFrequentType());
+		
 	}
 }
