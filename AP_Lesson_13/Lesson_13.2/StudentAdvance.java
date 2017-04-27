@@ -1,31 +1,22 @@
-public class StudentAdvance extends Ticket
+public class StudentAdvance extends Advance 
 {
-	private int daysLeft;
-	
-	public StudentAdvance()
+	public StudentAdvance() 
 	{
 		super();
 	}
 	
-	public StudentAdvance(int dl)
+	public StudentAdvance(int d) 
 	{
-		super(dl);
+		super(d);
 	}
 	
-	public double getPrice()
+	public double getPrice() 
 	{
-		if(daysLeft >= 10)
-		{
-			return 15.00;
-		}
-		else
-		{
-			return 20.00;
-		}
+		return super.getPrice()/2;
 	}
 	
-	public String toString()
+	public String toString() 
 	{
-		return super.toString() + "\n (STUDENT ID REQUIRED)"
+		return super.toString() + "\n(STUDENT ID REQUIRED)";
 	}
 }
