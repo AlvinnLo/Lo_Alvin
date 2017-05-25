@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import java.util.Arrays;
 public class GMC implements Location
 {
@@ -14,23 +13,10 @@ public class GMC implements Location
 	{
 		x = X;
 		y = Y;
-=======
-public class GMC extends Car
-{
-	public GMC()
-	{
-		super();
-	}
-	
-	public GMC (double x, double y)
-	{
-		super(x, y);
->>>>>>> origin/master
 	}
 	
 	public int getID()
 	{
-<<<<<<< HEAD
 		return (int)(Math.random() * 123456) + 1;
 	}
 	
@@ -46,8 +32,5 @@ public class GMC extends Car
 		location[30] = x;
 		location[45] = y;
 		return location;
-=======
-		return id;
->>>>>>> origin/master
 	}
 }

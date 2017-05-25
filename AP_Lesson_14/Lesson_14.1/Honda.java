@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import java.util.Arrays;
 public class Honda extends Car
 {
@@ -6,22 +5,5 @@ public class Honda extends Car
 	{
 		super();
 		super.move(position[0], position[1]);
-=======
-public class Honda extends Car
-{
-	public Honda()
-	{
-		super();
-	}
-	
-	public Honda (double x, double y)
-	{
-		super(x, y);
-	}
-	
-	public int getID()
-	{
-		return id;
->>>>>>> origin/master
 	}
 }

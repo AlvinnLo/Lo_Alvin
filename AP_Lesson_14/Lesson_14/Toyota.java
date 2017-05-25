@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import java.util.Arrays;
 public class Toyota implements Location
 {
@@ -12,23 +11,10 @@ public class Toyota implements Location
 	public Toyota(String L)
 	{
 		location = L;
-=======
-public class Toyota extends Car
-{
-	public Toyota()
-	{
-		super();
-	}
-	
-	public Toyota (double x, double y)
-	{
-		super(x, y);
->>>>>>> origin/master
 	}
 	
 	public int getID()
 	{
-<<<<<<< HEAD
 		return (int)(Math.random() * 123456) + 1;
 	}
 	
@@ -44,8 +30,5 @@ public class Toyota extends Car
 		Location[0] = Double.parseDouble(loca[0]);
 		Location[1] = Double.parseDouble(loca[1]);
 		return Location;
-=======
-		return id;
->>>>>>> origin/master
 	}
 }
