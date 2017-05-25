@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import java.util.Arrays;
 public class Honda implements Location
 {
@@ -12,10 +13,23 @@ public class Honda implements Location
 	{
 		loc = new double[2];
 		loc = L;
+=======
+public class Honda extends Car
+{
+	public Honda()
+	{
+		super();
+	}
+	
+	public Honda (double x, double y)
+	{
+		super(x, y);
+>>>>>>> origin/master
 	}
 	
 	public int getID()
 	{
+<<<<<<< HEAD
 		return (int)(Math.random() * 123456) + 1;
 	}
 	
@@ -28,5 +42,8 @@ public class Honda implements Location
 	public double[] getLoc()
 	{
 		return loc;
+=======
+		return id;
+>>>>>>> origin/master
 	}
 }
